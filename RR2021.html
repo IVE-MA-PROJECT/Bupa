@@ -917,19 +917,7 @@
                                           *|REBATE-DECREASE:END|*
                                           <!--REBATE-DECREASE-->
 
-                                          <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
-                                              <tr>
-                                                  <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                              </tr>
-                                              <tr>
-                                                  <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:37%;'>
-                                                      Level of cover:
-                                                  </td>
-                                                  <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:63%;'>
-                                                      *|PKGE_DESC|*
-                                                  </td>
-                                              </tr>
-                                          </table>
+                                          
 
                                       </td>
                                       <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
@@ -953,13 +941,30 @@
                               *|COMMON_PREMIUMSTD:BEGIN|*
                               <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;'>
                                   <tr>
+                                      <td colspan='2'>
+                                        <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;background-color: *|EXTRACT_SEGMENT|*;'>
+                                              <tr>
+                                                  <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                              </tr>
+                                              <tr>
+                                                  <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:33.33%;'>
+                                                      Level of cover:
+                                                  </td>
+                                                  <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:66.66%;'>
+                                                      *|PKGE_DESC|*
+                                                  </td>
+                                              </tr>
+                                          </table>
+                                      </td>
+                                  </tr>
+                                  <tr>
                                       <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
                                   </tr>
                                   <tr>
-                                      <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:37%;'>
+                                      <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:33.33%;'>
                                           Your current premium:
                                       </td>
-                                      <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:63%;word-break: break-word;'>
+                                      <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:66.66%;word-break: break-word;'>
                                           <b>*|CURR_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.
                                       </td>
                                   </tr>
@@ -967,10 +972,10 @@
                                       <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
                                   </tr>
                                   <tr>
-                                      <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:37%;'>
+                                      <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:33.33%;'>
                                           Your new premium from 1&nbsp;April&nbsp;2021:
                                       </td>
-                                      <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:63%;word-break: break-word;'>
+                                      <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:66.66%;word-break: break-word;'>
                                           <!--REBATE-PREMIUM1-->
                                           <!--COMMON_CURR-REBATE_AMOUNT-STD-->
                                           <table border='0' cellpadding='0' cellspacing='0'>
@@ -1015,6 +1020,48 @@
                                   </tr>
                                   <tr>
                                       <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                  </tr>
+                              </table>
+                              <table width='550' border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;background-color: #dedcd8;'>
+                                  <tr>
+                                      <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                      <td width='183' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:95px;max-width:182px;width:33.33%;text-align: center;word-break: break-word;'>
+                                          Membership Type
+                                      </td>
+                                      <td width='183' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:95px;max-width:182px;width:33.33%;text-align: center;word-break: break-word;'>
+                                          On this cover&nbsp;from
+                                      </td>
+                                      <td width='184' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:95px;max-width:183px;width:33.33%;text-align: center;word-break: break-word;'>
+                                          Your current Gov Rebate
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan='3'>
+                                          <table border='0' cellpadding='0' cellspacing='0' style='background-color: #f1efeb;width:100%;'>
+                                              <tr>
+                                                  <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                              </tr>
+                                              <tr>
+                                                  <td width='183' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-size:14px;line-height:18px;min-width:95px;max-width:182px;width:33.33%;text-align: center;'>
+                                                      *|MEMB_TYPE_DESC|*
+                                                  </td>
+                                                  <td width='183' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-size:14px;line-height:18px;min-width:95px;max-width:182px;width:33.33%;text-align: center;'>
+                                                      *|COVER_FROM_DATE|*
+                                                  </td>
+                                                  <td width='184' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-size:14px;line-height:18px;min-width:95px;max-width:183px;width:33.33%;text-align: center;'>
+                                                      *|PRE_1APR_REBATE%|*
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                              </tr>
+                                          </table>
+                                      </td>
                                   </tr>
                               </table>
                               *|COMMON_PREMIUMSTD:END|*
@@ -1024,6 +1071,23 @@
                               *|COMMON_PREMIUMSTD_NOREBATE:BEGIN|*
                               <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;'>
                                   <tr>
+                                      <td colspan='2'>
+                                        <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;background-color: *|EXTRACT_SEGMENT|*;'>
+                                              <tr>
+                                                  <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                              </tr>
+                                              <tr>
+                                                  <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:37%;'>
+                                                      Level of cover:
+                                                  </td>
+                                                  <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:63%;'>
+                                                      *|PKGE_DESC|*
+                                                  </td>
+                                              </tr>
+                                          </table>
+                                      </td>
+                                  </tr>
+                                  <tr>
                                       <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
                                   </tr>
                                   <tr>
@@ -1088,10 +1152,68 @@
                                       <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
                                   </tr>
                               </table>
+                              <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
+                                  <tr>
+                                      <td colspan='3' height='2' style='font-size:2px;line-height:2px;height:2px;background-color: #0079c8;'>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan='3'>
+                                          <table border='0' cellpadding='0' cellspacing='0' style='width:100%;background-color: #dedcd8;'>
+                                              <tr>
+                                                  <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                              </tr>
+                                              <tr>
+                                                  <td width='273' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:135px;max-width:275px;width:50%;text-align: center;word-break: break-word;'>
+                                                      Membership Type
+                                                  </td>
+                                                  <td width='273' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:135px;max-width:275px;width:50%;text-align: center;word-break: break-word;'>
+                                                      On this cover&nbsp;from
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                              </tr>
+                                          </table>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                      <td width='273' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;min-width:135px;max-width:275px;width:50%;text-align: center;'>
+                                          *|MEMB_TYPE_DESC|*
+                                      </td>
+                                      <td width='273' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;min-width:135px;max-width:275px;width:50%;text-align: center;'>
+                                          *|COVER_FROM_DATE|*
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                  </tr>
+                              </table>
                               *|COMMON_PREMIUMSTD_NOREBATE:END|*
                               <!--COMMON_PREMIUMSTD_NOREBATE-->
-                              <!--COMMON_RATESTAFF_SUMMARY-->                              
+
+                              <!--COMMON_RATESTAFF_SUMMARY-->
+                              *|COMMON_RATESTAFF_SUMMARY:BEGIN|*                             
                               <table width='550' border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;background-color: #dedcd8;'>
+                                  <tr>
+                                      <td colspan='3'>
+                                        <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;background-color: *|EXTRACT_SEGMENT|*;'>
+                                              <tr>
+                                                  <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                              </tr>
+                                              <tr>
+                                                  <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:37%;'>
+                                                      Level of cover:
+                                                  </td>
+                                                  <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:63%;'>
+                                                      *|PKGE_DESC|*
+                                                  </td>
+                                              </tr>
+                                          </table>
+                                      </td>
+                                  </tr>
                                   <tr>
                                       <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
                                   </tr>
@@ -1147,8 +1269,6 @@
                                       </td>
                                   </tr>
                               </table>
-                              <!--COMMON_RATESTAFF_SUMMARY-->
-                              <!--COMMON_PREMIUMSTD-->
                               <table width='550' border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;background-color: #dedcd8;'>
                                   <tr>
                                       <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
@@ -1191,103 +1311,12 @@
                                       </td>
                                   </tr>
                               </table>
-                              <!--COMMON_PREMIUMSTD-->
-                              <!--COMMON_RATESTAFF_SUMMARY-->
-                              <table width='550' border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;background-color: #dedcd8;'>
-                                  <tr>
-                                      <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                  </tr>
-                                  <tr>
-                                      <td width='183' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:95px;max-width:182px;width:33.33%;text-align: center;word-break: break-word;'>
-                                          Membership Type
-                                      </td>
-                                      <td width='183' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:95px;max-width:182px;width:33.33%;text-align: center;word-break: break-word;'>
-                                          On this cover&nbsp;from
-                                      </td>
-                                      <td width='184' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:95px;max-width:183px;width:33.33%;text-align: center;word-break: break-word;'>
-                                          Your current Gov Rebate
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                  </tr>
-                                  <tr>
-                                      <td colspan='3'>
-                                          <table border='0' cellpadding='0' cellspacing='0' style='background-color: #f1efeb;width:100%;'>
-                                              <tr>
-                                                  <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                              </tr>
-                                              <tr>
-                                                  <td width='183' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-size:14px;line-height:18px;min-width:95px;max-width:182px;width:33.33%;text-align: center;'>
-                                                      *|MEMB_TYPE_DESC|*
-                                                  </td>
-                                                  <td width='183' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-size:14px;line-height:18px;min-width:95px;max-width:182px;width:33.33%;text-align: center;'>
-                                                      *|COVER_FROM_DATE|*
-                                                  </td>
-                                                  <td width='184' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-size:14px;line-height:18px;min-width:95px;max-width:183px;width:33.33%;text-align: center;'>
-                                                      *|PRE_1APR_REBATE%|*
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                              </tr>
-                                          </table>
-                                      </td>
-                                  </tr>
-                              </table>
+                              *|COMMON_RATESTAFF_SUMMARY:END|*
                               <!--COMMON_RATESTAFF_SUMMARY-->
                           </td>
                           <td width='15' style='min-width:5px;max-width:15px;'>&nbsp;</td>
                       </tr>
-                      <tr>
-                          <td width='15' style='min-width:5px;max-width:15px;font-size:2px;line-height:2px;height:2px;'>&nbsp;</td>
-                          <td height='2' style='font-size:2px;line-height:2px;height:2px;background-color: #0079c8;'>&nbsp;</td>
-                          <td width='15' style='min-width:5px;max-width:15px;font-size:2px;line-height:2px;height:2px;'>&nbsp;</td>
-                      </tr>
-                      <tr>
-                          <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
-                          <td class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;width:95%;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
-                              <!--COMMON_PREMIUMSTD_NOREBATE-->
-                              <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
-                                  <tr>
-                                      <td colspan='3'>
-                                          <table border='0' cellpadding='0' cellspacing='0' style='width:100%;background-color: #dedcd8;'>
-                                              <tr>
-                                                  <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                              </tr>
-                                              <tr>
-                                                  <td width='273' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:135px;max-width:275px;width:50%;text-align: center;word-break: break-word;'>
-                                                      Membership Type
-                                                  </td>
-                                                  <td width='273' class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:14px;line-height:18px;min-width:135px;max-width:275px;width:50%;text-align: center;word-break: break-word;'>
-                                                      On this cover&nbsp;from
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                              </tr>
-                                          </table>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                  </tr>
-                                  <tr>
-                                      <td width='273' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;min-width:135px;max-width:275px;width:50%;text-align: center;'>
-                                          *|MEMB_TYPE_DESC|*
-                                      </td>
-                                      <td width='273' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;min-width:135px;max-width:275px;width:50%;text-align: center;'>
-                                          *|COVER_FROM_DATE|*
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                  </tr>
-                              </table>
-                              <!--COMMON_PREMIUMSTD_NOREBATE-->
-                          </td>
-                          <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
-                      </tr>
+
                       <tr>
                           <td width='15' style='min-width:5px;max-width:15px;font-size:2px;line-height:2px;height:2px;'>&nbsp;</td>
                           <td height='2' style='font-size:2px;line-height:2px;height:2px;background-color: #0079c8;'>&nbsp;</td>
