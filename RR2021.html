@@ -976,7 +976,23 @@
                                           Your current premium:
                                       </td>
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:66.66%;word-break: break-word;'>
-                                          <b>*|CURR_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.
+                                          <b>*|CURR_NET_RATE|*</b> per *|PAY-FREQ|*  
+
+                                        <!--REBATE-PREMIUM1-->
+                                        *|REBATE-PREMIUM1:BEGIN|*
+                                          <!--COMMON_CURR-REBATE_AMOUNT-STD-->
+                                          *|COMMON_CURR-REBATE_AMOUNT-STD:BEGIN|*
+                                          <span style='display: inline-block;'>INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span> 
+                                          *|COMMON_CURR-REBATE_AMOUNT-STD:END|*
+                                          <!--COMMON_CURR-REBATE_AMOUNT-STD-->
+
+                                          <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
+                                          *|COMMON_CURR-REBATE-AMOUNT-SPLIT:BEGIN|*
+                                          <span style='display: inline-block;'>INCLUDING your current rebate on your extras of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span>
+                                          *|COMMON_CURR-REBATE-AMOUNT-SPLIT:END|*
+                                          <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
+                                        *|REBATE-PREMIUM1:END|*
+                                        <!--REBATE-PREMIUM1-->
                                       </td>
                                   </tr>
                                   <tr>
@@ -987,54 +1003,23 @@
                                           Your new premium from 1&nbsp;April&nbsp;2021:
                                       </td>
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:66.66%;word-break: break-word;'>
-                                          <!--REBATE-PREMIUM1-->
-                                          <!--COMMON_CURR-REBATE_AMOUNT-STD-->
-                                          *|COMMON_CURR-REBATE_AMOUNT-STD:BEGIN|*
-                                          <table border='0' cellpadding='0' cellspacing='0'>
-                                              <tr>
-                                                  <td>
-                                                      <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.
-                                                  </td>
-                                              </tr>
-                                          </table>
-                                          *|COMMON_CURR-REBATE_AMOUNT-STD:END|*
-                                          <!--COMMON_CURR-REBATE_AMOUNT-STD-->
-                                          <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
-                                          *|COMMON_CURR-REBATE-AMOUNT-SPLIT:BEGIN|*
-                                          <table border='0' cellpadding='0' cellspacing='0'>
-                                              <tr>
-                                                  <td>
-                                                      <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your current rebate on your extras of *|CURR_REB_AMT|* per *|PAY_FREQ|*.
-                                                  </td>
-                                              </tr>
-                                          </table>
-                                          *|COMMON_CURR-REBATE-AMOUNT-SPLIT:END|*
-                                          <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
-                                          <!--REBATE-PREMIUM1-->
-                                          <!--REBATE-PREMIUM2-->
+                                          <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* 
+
+                                        <!--REBATE-PREMIUM2-->
+                                        *|REBATE-PREMIUM2:BEGIN|*
                                           <!--COMMON_NEW-REBATE_AMOUNT-STD-->
                                           *|COMMON_NEW-REBATE_AMOUNT-STD:BEGIN|*
-                                          <table border='0' cellpadding='0' cellspacing='0'>
-                                              <tr>
-                                                  <td>
-                                                      <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your new rebate of *|NEW_REB_AMT|* per *|PAY_FREQ|*.
-                                                  </td>
-                                              </tr>
-                                          </table>
+                                          <span style='display: inline-block;'>INCLUDING your new rebate of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_NEW-REBATE_AMOUNT-STD:END|*
                                           <!--COMMON_NEW-REBATE_AMOUNT-STD-->
+
                                           <!--COMMON_NEW-REBATE-AMOUNT-SPLIT-->
                                           *|COMMON_NEW-REBATE-AMOUNT-SPLIT:BEGIN|*
-                                          <table border='0' cellpadding='0' cellspacing='0'>
-                                              <tr>
-                                                  <td>
-                                                      <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your new rebate on your extras of *|NEW_REB_AMT|* per *|PAY_FREQ|*.
-                                                  </td>
-                                              </tr>
-                                          </table>
+                                          <span style='display: inline-block;'>INCLUDING your new rebate on your extras of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_NEW-REBATE-AMOUNT-SPLIT:END|*
                                           <!--COMMON_NEW-REBATE-AMOUNT-SPLIT-->
-                                          <!--REBATE-PREMIUM2-->
+                                        *|REBATE-PREMIUM2:END|*
+                                        <!--REBATE-PREMIUM2-->
                                       </td>
                                   </tr>
                                   <tr>
@@ -1085,6 +1070,7 @@
                               </table>
                               *|COMMON_PREMIUMSTD:END|*
                               <!--COMMON_PREMIUMSTD-->
+
                               <!--COMMON_PREMIUMSTD_NOREBATE-->
                               *|COMMON_PREMIUMSTD_NOREBATE:BEGIN|*
                               <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;'>
@@ -1114,64 +1100,49 @@
                                       </td>
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:63%;word-break: break-word;'>
                                           <b>*|CURR_NET_RATE|*</b> per *|PAY-FREQ|*
+
+                                        <!--REBATE-PREMIUM1-->
+                                        *|REBATE-PREMIUM1:BEGIN|*
+                                          <!--COMMON_CURR-REBATE_AMOUNT-STD-->
+                                          *|COMMON_CURR-REBATE_AMOUNT-STD:BEGIN|*
+                                          <span style='display: inline-block;'>INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span>
+                                          *|COMMON_CURR-REBATE_AMOUNT-STD:END|*
+                                          <!--COMMON_CURR-REBATE_AMOUNT-STD-->
+                                          <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
+                                          *|COMMON_CURR-REBATE-AMOUNT-SPLIT:BEGIN|*
+                                          <span style='display: inline-block;'>INCLUDING your current rebate on your extras of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span>
+                                          *|COMMON_CURR-REBATE-AMOUNT-SPLIT:END|*
+                                          <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
+                                        *|REBATE-PREMIUM1:END|*
+                                        <!--REBATE-PREMIUM1-->
                                       </td>
                                   </tr>
+
                                   <tr>
                                       <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
                                   </tr>
+
                                   <tr>
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:37%;'>
                                           Your new premium from 1&nbsp;April&nbsp;2021:
                                       </td>
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:63%;word-break: break-word;'>
-                                          <!--REBATE-PREMIUM1-->
-                                          <!--COMMON_CURR-REBATE_AMOUNT-STD-->
-                                          *|COMMON_CURR-REBATE_AMOUNT-STD:BEGIN|*
-                                          <table border='0' cellpadding='0' cellspacing='0'>
-                                              <tr>
-                                                  <td>
-                                                      <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.
-                                                  </td>
-                                              </tr>
-                                          </table>
-                                          *|COMMON_CURR-REBATE_AMOUNT-STD:END|*
-                                          <!--COMMON_CURR-REBATE_AMOUNT-STD-->
-                                          <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
-                                          *|COMMON_CURR-REBATE-AMOUNT-SPLIT:BEGIN|*
-                                          <table border='0' cellpadding='0' cellspacing='0'>
-                                              <tr>
-                                                  <td>
-                                                      <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your current rebate on your extras of *|CURR_REB_AMT|* per *|PAY_FREQ|*.
-                                                  </td>
-                                              </tr>
-                                          </table>
-                                          *|COMMON_CURR-REBATE-AMOUNT-SPLIT:END|*
-                                          <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
-                                          <!--REBATE-PREMIUM1-->
-                                          <!--REBATE-PREMIUM2-->
+                                          <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* 
+
+                                        <!--REBATE-PREMIUM2-->
+                                        *|REBATE-PREMIUM2:BEGIN|*
                                           <!--COMMON_NEW-REBATE_AMOUNT-STD-->
                                           *|COMMON_NEW-REBATE_AMOUNT-STD:BEGIN|*
-                                          <table border='0' cellpadding='0' cellspacing='0'>
-                                              <tr>
-                                                  <td>
-                                                      <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your new rebate of *|NEW_REB_AMT|* per *|PAY_FREQ|*.
-                                                  </td>
-                                              </tr>
-                                          </table>
+                                          <span style='display: inline-block;'>INCLUDING your new rebate of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_NEW-REBATE_AMOUNT-STD:END|*
                                           <!--COMMON_NEW-REBATE_AMOUNT-STD-->
                                           <!--COMMON_NEW-REBATE-AMOUNT-SPLIT-->
                                           *|COMMON_NEW-REBATE-AMOUNT-SPLIT:BEGIN|*
-                                          <table border='0' cellpadding='0' cellspacing='0'>
-                                              <tr>
-                                                  <td>
-                                                      <b>*|NEW_NET_RATE|*</b> per *|PAY-FREQ|* INCLUDING your new rebate on your extras of *|NEW_REB_AMT|* per *|PAY_FREQ|*.
-                                                  </td>
-                                              </tr>
-                                          </table>
+                                          <span style='display: inline-block;'>INCLUDING your new rebate on your extras of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_NEW-REBATE-AMOUNT-SPLIT:END|*
                                           <!--COMMON_NEW-REBATE-AMOUNT-SPLIT-->
-                                          <!--REBATE-PREMIUM2-->
+                                        *|REBATE-PREMIUM2:END|*
+                                        <!--REBATE-PREMIUM2-->
                                       </td>
                                   </tr>
                                   <tr>
