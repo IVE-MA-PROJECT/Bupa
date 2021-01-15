@@ -913,7 +913,6 @@
                                   </tr>
                                   *|UNFINANCIAL:END|*
                                   <!--UNFINANCIAL-->
-
                                   <!--REBATE-DECREASE-->
                                   *|REBATE-DECREASE:BEGIN|*
                                   <tr>
@@ -943,47 +942,48 @@
                       </tr>
 
 
-
+                      <!--COMMON_PREMIUM_CHANGE-->
+                      *|COMMON_PREMIUM_CHANGE:BEGIN|*
                       <!--COMMON_PREMIUMSTD-->
                       *|COMMON_PREMIUMSTD:BEGIN|*
                       <tr>
-                        <td colspan='3'>
-                          <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;background-color: *|EXTRACT_SEGMENT|*;'>
-                            <tr>
-                              <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
-                              <td width='550' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:550px;width:95%;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
-                                  <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
-                                    <tr>
-                                      <td>
-                                        <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
-                                          <tr>
-                                            <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                          </tr>
-                                          <tr>
-                                            <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:37%;'>
-                                              Level of cover:
-                                            </td>
-                                            <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:63%;'>
-                                              *|PKGE_DESC|*
-                                            </td>
-                                          </tr>
-                                        </table>
+                          <td colspan='3'>
+                              <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;background-color: *|EXTRACT_SEGMENT|*;'>
+                                  <tr>
+                                      <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
+                                      <td width='550' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:550px;width:95%;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
+                                          <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
+                                              <tr>
+                                                  <td>
+                                                      <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
+                                                          <tr>
+                                                              <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:37%;'>
+                                                                  Level of cover:
+                                                              </td>
+                                                              <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:63%;'>
+                                                                  *|PKGE_DESC|*
+                                                              </td>
+                                                          </tr>
+                                                      </table>
+                                                  </td>
+                                              </tr>
+                                          </table>
                                       </td>
-                                    </tr>
-                                  </table>
-                              </td>
-                              <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
-                            </tr>
-                            <tr>
-                              <td colspan='3' height='7' style='font-size: 7px;line-height: 7px;height:7px;'>&nbsp;</td>
-                            </tr>
-                          </table>
-                        </td>
+                                      <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan='3' height='7' style='font-size: 7px;line-height: 7px;height:7px;'>&nbsp;</td>
+                                  </tr>
+                              </table>
+                          </td>
                       </tr>
                       <tr>
                           <td width='15' style='min-width:5px;max-width:15px;'>&nbsp;</td>
                           <td width='550' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:550px;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
-                              
+
                               <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;'>
                                   <tr>
                                       <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
@@ -993,23 +993,22 @@
                                           Your current premium:
                                       </td>
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:66.66%;word-break: break-word;'>
-                                          <b>*|CURR_NET_RATE|*</b> per *|PAY_FREQ|*  
+                                          <b>*|CURR_NET_RATE|*</b> per *|PAY_FREQ|*
 
-                                        <!--REBATE-PREMIUM1-->
-                                        *|REBATE-PREMIUM1:BEGIN|*
+                                          <!--REBATE-PREMIUM1-->
+                                          *|REBATE-PREMIUM1:BEGIN|*
                                           <!--COMMON_CURR-REBATE_AMOUNT-STD-->
                                           *|COMMON_CURR-REBATE_AMOUNT-STD:BEGIN|*
-                                          <span style='display: inline-block;'>INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span> 
+                                          <span style='display: inline-block;'>INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_CURR-REBATE_AMOUNT-STD:END|*
                                           <!--COMMON_CURR-REBATE_AMOUNT-STD-->
-
                                           <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
                                           *|COMMON_CURR-REBATE-AMOUNT-SPLIT:BEGIN|*
                                           <span style='display: inline-block;'>INCLUDING your current rebate on your extras of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_CURR-REBATE-AMOUNT-SPLIT:END|*
                                           <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
-                                        *|REBATE-PREMIUM1:END|*
-                                        <!--REBATE-PREMIUM1-->
+                                          *|REBATE-PREMIUM1:END|*
+                                          <!--REBATE-PREMIUM1-->
                                       </td>
                                   </tr>
                                   <tr>
@@ -1020,23 +1019,22 @@
                                           Your new premium from 1&nbsp;April&nbsp;2021:
                                       </td>
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:66.66%;word-break: break-word;'>
-                                          <b>*|NEW_NET_RATE|*</b> per *|PAY_FREQ|* 
+                                          <b>*|NEW_NET_RATE|*</b> per *|PAY_FREQ|*
 
-                                        <!--REBATE-PREMIUM2-->
-                                        *|REBATE-PREMIUM2:BEGIN|*
+                                          <!--REBATE-PREMIUM2-->
+                                          *|REBATE-PREMIUM2:BEGIN|*
                                           <!--COMMON_NEW-REBATE_AMOUNT-STD-->
                                           *|COMMON_NEW-REBATE_AMOUNT-STD:BEGIN|*
                                           <span style='display: inline-block;'>INCLUDING your new rebate of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_NEW-REBATE_AMOUNT-STD:END|*
                                           <!--COMMON_NEW-REBATE_AMOUNT-STD-->
-
                                           <!--COMMON_NEW-REBATE-AMOUNT-SPLIT-->
                                           *|COMMON_NEW-REBATE-AMOUNT-SPLIT:BEGIN|*
                                           <span style='display: inline-block;'>INCLUDING your new rebate on your extras of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_NEW-REBATE-AMOUNT-SPLIT:END|*
                                           <!--COMMON_NEW-REBATE-AMOUNT-SPLIT-->
-                                        *|REBATE-PREMIUM2:END|*
-                                        <!--REBATE-PREMIUM2-->
+                                          *|REBATE-PREMIUM2:END|*
+                                          <!--REBATE-PREMIUM2-->
                                       </td>
                                   </tr>
                                   <tr>
@@ -1085,54 +1083,52 @@
                                       </td>
                                   </tr>
                               </table>
-                              
+
                           </td>
                           <td width='15' style='min-width:5px;max-width:15px;'>&nbsp;</td>
                       </tr>
                       *|COMMON_PREMIUMSTD:END|*
                       <!--COMMON_PREMIUMSTD-->
-
-
                       <!--COMMON_PREMIUMSTD_NOREBATE-->
                       *|COMMON_PREMIUMSTD_NOREBATE:BEGIN|*
                       <tr>
-                        <td colspan='3'>
-                          <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;background-color: *|EXTRACT_SEGMENT|*;'>
-                            <tr>
-                              <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
-                              <td width='550' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:550px;width:95%;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
-                                  <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
-                                    <tr>
-                                      <td>
-                                        <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
-                                          <tr>
-                                            <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                          </tr>
-                                          <tr>
-                                            <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:37%;'>
-                                              Level of cover:
-                                            </td>
-                                            <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:63%;'>
-                                              *|PKGE_DESC|*
-                                            </td>
-                                          </tr>
-                                        </table>
+                          <td colspan='3'>
+                              <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;background-color: *|EXTRACT_SEGMENT|*;'>
+                                  <tr>
+                                      <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
+                                      <td width='550' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:550px;width:95%;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
+                                          <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
+                                              <tr>
+                                                  <td>
+                                                      <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
+                                                          <tr>
+                                                              <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:37%;'>
+                                                                  Level of cover:
+                                                              </td>
+                                                              <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:63%;'>
+                                                                  *|PKGE_DESC|*
+                                                              </td>
+                                                          </tr>
+                                                      </table>
+                                                  </td>
+                                              </tr>
+                                          </table>
                                       </td>
-                                    </tr>
-                                  </table>
-                              </td>
-                              <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
-                            </tr>
-                            <tr>
-                              <td colspan='3' height='7' style='font-size: 7px;line-height: 7px;height:7px;'>&nbsp;</td>
-                            </tr>
-                          </table>
-                        </td>
+                                      <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan='3' height='7' style='font-size: 7px;line-height: 7px;height:7px;'>&nbsp;</td>
+                                  </tr>
+                              </table>
+                          </td>
                       </tr>
                       <tr>
                           <td width='15' style='min-width:5px;max-width:15px;'>&nbsp;</td>
                           <td width='550' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:550px;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
-                              
+
                               <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;'>
                                   <tr>
                                       <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
@@ -1144,8 +1140,8 @@
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:63%;word-break: break-word;'>
                                           <b>*|CURR_NET_RATE|*</b> per *|PAY_FREQ|*
 
-                                        <!--REBATE-PREMIUM1-->
-                                        *|REBATE-PREMIUM1:BEGIN|*
+                                          <!--REBATE-PREMIUM1-->
+                                          *|REBATE-PREMIUM1:BEGIN|*
                                           <!--COMMON_CURR-REBATE_AMOUNT-STD-->
                                           *|COMMON_CURR-REBATE_AMOUNT-STD:BEGIN|*
                                           <span style='display: inline-block;'>INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span>
@@ -1156,8 +1152,8 @@
                                           <span style='display: inline-block;'>INCLUDING your current rebate on your extras of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_CURR-REBATE-AMOUNT-SPLIT:END|*
                                           <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
-                                        *|REBATE-PREMIUM1:END|*
-                                        <!--REBATE-PREMIUM1-->
+                                          *|REBATE-PREMIUM1:END|*
+                                          <!--REBATE-PREMIUM1-->
                                       </td>
                                   </tr>
                                   <tr>
@@ -1168,10 +1164,10 @@
                                           Your new premium from 1&nbsp;April&nbsp;2021:
                                       </td>
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:63%;word-break: break-word;'>
-                                          <b>*|NEW_NET_RATE|*</b> per *|PAY_FREQ|* 
+                                          <b>*|NEW_NET_RATE|*</b> per *|PAY_FREQ|*
 
-                                        <!--REBATE-PREMIUM2-->
-                                        *|REBATE-PREMIUM2:BEGIN|*
+                                          <!--REBATE-PREMIUM2-->
+                                          *|REBATE-PREMIUM2:BEGIN|*
                                           <!--COMMON_NEW-REBATE_AMOUNT-STD-->
                                           *|COMMON_NEW-REBATE_AMOUNT-STD:BEGIN|*
                                           <span style='display: inline-block;'>INCLUDING your new rebate of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
@@ -1182,8 +1178,8 @@
                                           <span style='display: inline-block;'>INCLUDING your new rebate on your extras of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
                                           *|COMMON_NEW-REBATE-AMOUNT-SPLIT:END|*
                                           <!--COMMON_NEW-REBATE-AMOUNT-SPLIT-->
-                                        *|REBATE-PREMIUM2:END|*
-                                        <!--REBATE-PREMIUM2-->
+                                          *|REBATE-PREMIUM2:END|*
+                                          <!--REBATE-PREMIUM2-->
                                       </td>
                                   </tr>
                                   <tr>
@@ -1229,54 +1225,52 @@
                                       <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
                                   </tr>
                               </table>
-                              
+
                           </td>
                           <td width='15' style='min-width:5px;max-width:15px;'>&nbsp;</td>
                       </tr>
                       *|COMMON_PREMIUMSTD_NOREBATE:END|*
                       <!--COMMON_PREMIUMSTD_NOREBATE-->
-
-
                       <!--COMMON_RATESTAFF_SUMMARY-->
                       *|COMMON_RATESTAFF_SUMMARY:BEGIN|*
                       <tr>
-                        <td colspan='3'>
-                          <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;background-color: *|EXTRACT_SEGMENT|*;'>
-                            <tr>
-                              <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
-                              <td width='550' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:550px;width:95%;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
-                                  <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
-                                    <tr>
-                                      <td>
-                                        <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
-                                          <tr>
-                                            <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
-                                          </tr>
-                                          <tr>
-                                            <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:37%;'>
-                                              Level of cover:
-                                            </td>
-                                            <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:63%;'>
-                                              *|PKGE_DESC|*
-                                            </td>
-                                          </tr>
-                                        </table>
+                          <td colspan='3'>
+                              <table border='0' cellpadding='0' cellspacing='0' style='min-width:100%;background-color: *|EXTRACT_SEGMENT|*;'>
+                                  <tr>
+                                      <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
+                                      <td width='550' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:550px;width:95%;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
+                                          <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
+                                              <tr>
+                                                  <td>
+                                                      <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
+                                                          <tr>
+                                                              <td colspan='2' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:bold;font-size:18px;line-height:22px;width:37%;'>
+                                                                  Level of cover:
+                                                              </td>
+                                                              <td class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;width:63%;'>
+                                                                  *|PKGE_DESC|*
+                                                              </td>
+                                                          </tr>
+                                                      </table>
+                                                  </td>
+                                              </tr>
+                                          </table>
                                       </td>
-                                    </tr>
-                                  </table>
-                              </td>
-                              <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
-                            </tr>
-                            <tr>
-                              <td colspan='3' height='7' style='font-size: 7px;line-height: 7px;height:7px;'>&nbsp;</td>
-                            </tr>
-                          </table>
-                        </td>
+                                      <td width='15' style='min-width:5px;max-width:15px;width:2.5%;'>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan='3' height='7' style='font-size: 7px;line-height: 7px;height:7px;'>&nbsp;</td>
+                                  </tr>
+                              </table>
+                          </td>
                       </tr>
                       <tr>
                           <td width='15' style='min-width:5px;max-width:15px;'>&nbsp;</td>
                           <td width='550' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:550px;font-family:Arial, sans-serif;font-weight:normal;font-size:18px;line-height:22px;color:#333333;mso-line-height-rule:exactly;text-align: left;'>
-                              
+
                               <table width='550' border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;background-color: #dedcd8;'>
                                   <tr>
                                       <td colspan='3' style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
@@ -1431,7 +1425,7 @@
                                       </td>
                                   </tr>
                               </table>
-                              
+
                           </td>
                           <td width='15' style='min-width:5px;max-width:15px;'>&nbsp;</td>
                       </tr>
@@ -1458,7 +1452,7 @@
                                           <img src='https://edmimages.bluestardm.com.au/RR2021/icon-tick.png' width='40' height='40' style='display: inline-block;border:none;vertical-align:middle;' />
                                       </td>
                                       <td width='115' valign='middle' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-weight:bold;font-size:32px;min-width:20%;max-width:115px;width:20%;vertical-align:middle;'>
-                                            *|TCLAIM|*  
+                                          *|TCLAIM|*
                                       </td>
                                       <td width='365' class='deskFont' valign='middle' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:16px;min-width:66%;max-width:365px;width:66%;vertical-align:middle;'>
                                           Benefits we’ve paid towards your membership in&nbsp;2020*
@@ -1490,7 +1484,7 @@
                                   </tr>
                                   <tr>
                                       <td class='deskFont' style='color:#333333;font-family:Arial, sans-serif;font-weight:normal;font-size:14px;line-height:18px;width:100%;word-break: break-word;'>
-                                          You will see your new premium deduction including your Bupa employee subsidy on&nbsp;your payslip after <span style='white-space: nowrap;'>1 April 2021.</span>
+                                          You will need to update your payment deduction including your Bupa employee subsidy on your payslip after <span style='white-space: nowrap;'>1 April 2021.</span>
                                       </td>
                                   </tr>
                                   <tr>
@@ -1590,6 +1584,8 @@
                           </td>
                           <td width='30' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:10px;max-width:30px;width: 5%;'>&nbsp;</td>
                       </tr>
+                      *|COMMON_PREMIUM_CHANGE:END|*
+                      <!--COMMON_PREMIUM_CHANGE-->
                   </table>
                   *|COMMON_PREMIUM_INTRO:END|*
                   <!--COMMON_PREMIUM_INTRO-->
