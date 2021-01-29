@@ -1342,61 +1342,39 @@
                                                       EXCLUDING your Bupa employee subsidy and payroll&nbsp;deduction
                                                   </td>
                                                   <td width='183' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-size:14px;line-height:18px;min-width:95px;max-width:182px;width:33.33%;text-align: center;word-break: break-word;'>
-                                                      *|CURR_NET_RATE|* per *|PAY_FREQ|*.
 
-                                                      <!--REBATE-PREMIUM1-->
-                                                      *|REBATE-PREMIUM1:BEGIN|*
-                                                      <!--COMMON_CURR-REBATE_AMOUNT-STD-->
-                                                      *|COMMON_CURR-REBATE_AMOUNT-STD:BEGIN|*
-                                                      <table border='0' cellpadding='0' cellspacing='0'>
-                                                          <tr>
-                                                              <td>
-                                                                  <b>*|NEW_NET_RATE|*</b> per *|PAY_FREQ|* INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.
-                                                              </td>
-                                                          </tr>
-                                                      </table>
-                                                      *|COMMON_CURR-REBATE_AMOUNT-STD:END|*
-                                                      <!--COMMON_CURR-REBATE_AMOUNT-STD-->
-                                                      <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
-                                                      *|COMMON_CURR-REBATE-AMOUNT-SPLIT:BEGIN|*
-                                                      <table border='0' cellpadding='0' cellspacing='0'>
-                                                          <tr>
-                                                              <td>
-                                                                  <b>*|NEW_NET_RATE|*</b> per *|PAY_FREQ|* INCLUDING your current rebate on your extras of *|CURR_REB_AMT|* per *|PAY_FREQ|*.
-                                                              </td>
-                                                          </tr>
-                                                      </table>
-                                                      *|COMMON_CURR-REBATE-AMOUNT-SPLIT:END|*
-                                                      <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
-                                                      *|REBATE-PREMIUM1:END|*
-                                                      <!--REBATE-PREMIUM1-->
+                                                    <b>*|CURR_NET_RATE|*</b> per *|PAY_FREQ|*
+
+                                                    <!--REBATE-PREMIUM1-->
+                                                    *|REBATE-PREMIUM1:BEGIN|*
+                                                    <!--COMMON_CURR-REBATE_AMOUNT-STD-->
+                                                    *|COMMON_CURR-REBATE_AMOUNT-STD:BEGIN|*
+                                                    <span style='display: inline-block;'>INCLUDING your current rebate of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span>
+                                                    *|COMMON_CURR-REBATE_AMOUNT-STD:END|*
+                                                    <!--COMMON_CURR-REBATE_AMOUNT-STD-->
+                                                    <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
+                                                    *|COMMON_CURR-REBATE-AMOUNT-SPLIT:BEGIN|*
+                                                    <span style='display: inline-block;'>INCLUDING your current rebate on your extras of *|CURR_REB_AMT|* per *|PAY_FREQ|*.</span>
+                                                    *|COMMON_CURR-REBATE-AMOUNT-SPLIT:END|*
+                                                    <!--COMMON_CURR-REBATE-AMOUNT-SPLIT-->
+                                                    *|REBATE-PREMIUM1:END|*
+                                                    <!--REBATE-PREMIUM1-->
+
 
                                                   </td>
                                                   <td width='184' class='deskFont' valign='top' style='height:auto;color:#333333;font-family:Arial, sans-serif;font-size:14px;line-height:18px;min-width:95px;max-width:183px;width:33.33%;text-align: center;word-break: break-word;'>
-                                                      *|NEW_NET_RATE|* per *|PAY_FREQ|*.
+                                                      <b>*|NEW_NET_RATE|*</b> per *|PAY_FREQ|*.
 
                                                       <!--REBATE-PREMIUM2-->
                                                       *|REBATE-PREMIUM2:BEGIN|*
                                                       <!--COMMON_NEW-REBATE_AMOUNT-STD-->
                                                       *|COMMON_NEW-REBATE_AMOUNT-STD:BEGIN|*
-                                                      <table border='0' cellpadding='0' cellspacing='0'>
-                                                          <tr>
-                                                              <td>
-                                                                  <b>*|NEW_NET_RATE|*</b> per *|PAY_FREQ|* INCLUDING your new rebate of *|NEW_REB_AMT|* per *|PAY_FREQ|*.
-                                                              </td>
-                                                          </tr>
-                                                      </table>
+                                                      <span style='display: inline-block;'>INCLUDING your new rebate of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
                                                       *|COMMON_NEW-REBATE_AMOUNT-STD:END|*
                                                       <!--COMMON_NEW-REBATE_AMOUNT-STD-->
                                                       <!--COMMON_NEW-REBATE-AMOUNT-SPLIT-->
                                                       *|COMMON_NEW-REBATE-AMOUNT-SPLIT:BEGIN|*
-                                                      <table border='0' cellpadding='0' cellspacing='0'>
-                                                          <tr>
-                                                              <td>
-                                                                  <b>*|NEW_NET_RATE|*</b> per *|PAY_FREQ|* INCLUDING your new rebate on your extras of *|NEW_REB_AMT|* per *|PAY_FREQ|*.
-                                                              </td>
-                                                          </tr>
-                                                      </table>
+                                                      <span style='display: inline-block;'>INCLUDING your new rebate on your extras of *|NEW_REB_AMT|* per *|PAY_FREQ|*.</span>
                                                       *|COMMON_NEW-REBATE-AMOUNT-SPLIT:END|*
                                                       <!--COMMON_NEW-REBATE-AMOUNT-SPLIT-->
                                                       *|REBATE-PREMIUM2:END|*
@@ -2516,7 +2494,7 @@
                                                                               </tr>
                                                                               <tr>
                                                                                   <td class='deskFontSmall' style='font-family:Helvetica, Arial, sans-serif; font-size: 18px; font-weight:normal; line-height: 22px; padding:0px; color:#333333; text-align:center;display:table;max-width:170px;margin:0 auto;'>
-                                                                                      Call us on <a class='deskFontSmaller' href='tel:*|CTA_PHONE|*' style='color:#333333;text-decoration:none;font-weight:bold;white-space:nowrap;'>*|CTA_PHONE|*</a><br />(8am -&nbsp;8pm AEDT Monday -&nbsp;Friday and 9am -&nbsp;5pm AEDT Saturday)
+                                                                                      Call us on <a class='deskFontSmall' href='tel:*|CTA_PHONE|*' style='color:#333333;text-decoration:none;font-weight:bold;white-space:nowrap;'>*|CTA_PHONE|*</a><br />(8am -&nbsp;8pm AEDT Monday -&nbsp;Friday and 9am -&nbsp;5pm AEDT Saturday)
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
@@ -2747,7 +2725,7 @@
                                                                               </tr>
                                                                               <tr>
                                                                                   <td class='deskFontSmall' style='font-family:Helvetica, Arial, sans-serif; font-size: 18px; font-weight:normal; line-height: 22px; padding:0px; color:#333333; text-align:center;display:table;max-width:170px;margin:0 auto;'>
-                                                                                      Call us on <a class='deskFontSmaller' href='tel:*|CTA_PHONE|*' style='color:#333333;text-decoration:none;font-weight:bold;white-space:nowrap;'>*|CTA_PHONE|*</a><br />(8am -&nbsp;8pm AEDT Monday -&nbsp;Friday and 9am -&nbsp;5pm AEDT Saturday)
+                                                                                      Call us on <a class='deskFontSmall' href='tel:*|CTA_PHONE|*' style='color:#333333;text-decoration:none;font-weight:bold;white-space:nowrap;'>*|CTA_PHONE|*</a><br />(8am -&nbsp;8pm AEDT Monday -&nbsp;Friday and 9am -&nbsp;5pm AEDT Saturday)
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
@@ -4392,7 +4370,7 @@
                                     </tr>
                                     <tr>
                                         <td class='deskFontSmall' style='mso-table-lspace:0pt;mso-table-rspace:0pt;font-family: open_sansregular, Helvetica, Arial, sans-serif; color: #333333;font-size: 14px; line-height: 18px; text-align: left; font-weight: normal;mso-line-height-rule:exactly;'>
-                                            Please do not reply to this email. Replies go to an unmonitored mailbox. This email has been sent to <a class='deskFontSmall' href='mailto:*|EMAIL_CONTACT|*' style='font-family: open_sansregular, Helvetica, Arial, sans-serif; color: #333333;font-size: 14px;font-weight: normal;color: #0079c8;text-decoration: underline;'>*|EMAIL_CONTACT|*</a> by Bupa HI Pty Ltd <span class='appleLinks' style='white-space:nowrap;'>ABN 81 000 057 590</span> -&nbsp;33&nbsp;Exhibition Street, Melbourne, VIC&nbsp;3000, Australia (Bupa). Bupa&nbsp;values your privacy. You can change how we send you membership communications by&nbsp;logging in to <a class='deskFontSmall' href='https://my.bupa.com.au/login' style='font-weight: normal;color: #0079c8;text-decoration: underline;'>myBupa.</a> If you have any questions or feedback, go to <a class='deskFontSmall' href='https://www.bupa.com.au' style='font-family: open_sansregular, Helvetica, Arial, sans-serif; color: #333333;font-size: 14px;font-weight: normal;color: #0079c8;text-decoration: underline;'>bupa.com.au</a> or&nbsp;call&nbsp;<a class='appleLinks' href='tel:*|CTA_PHONE|*' style='font-size: 14px;font-weight: bold;color: #333333;text-decoration: none;white-space:nowrap;'>*|CTA_PHONE|*.</a>
+                                            Please do not reply to this email. Replies go to an unmonitored mailbox. This email has been sent to <a class='deskFontSmall' href='mailto:*|EMAIL_CONTACT|*' style='font-family: open_sansregular, Helvetica, Arial, sans-serif; color: #333333;font-size: 14px;font-weight: normal;color: #0079c8;text-decoration: underline;'>*|EMAIL_CONTACT|*</a> by Bupa HI Pty Ltd <span class='appleLinks' style='white-space:nowrap;'>ABN 81 000 057 590</span> -&nbsp;33&nbsp;Exhibition Street, Melbourne, VIC&nbsp;3000, Australia (Bupa). Bupa&nbsp;values your privacy. You can change how we send you membership communications by&nbsp;logging in to <a class='deskFontSmall' href='https://my.bupa.com.au/login' style='font-weight: normal;color: #0079c8;text-decoration: underline;'>myBupa.</a> If you have any questions or feedback, go to <a class='deskFontSmall' href='https://www.bupa.com.au' style='font-family: open_sansregular, Helvetica, Arial, sans-serif; color: #333333;font-size: 14px;font-weight: normal;color: #0079c8;text-decoration: underline;'>bupa.com.au</a> or&nbsp;call&nbsp;<a class='appleLinks' href='tel:*|CTA_PHONE|*' style='font-size: 14px;font-weight: bold;color: #333333;text-decoration: none;white-space:nowrap;'><span class='deskFontSmall'>*|CTA_PHONE|*.</span></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -4536,7 +4514,7 @@
                                     <tr>
                                         <td class='deskFontSmall' style='mso-table-lspace:0pt;mso-table-rspace:0pt;font-family: open_sansregular, Helvetica, Arial, sans-serif; color: #333333;font-size: 14px; line-height: 18px; text-align: left; font-weight: normal;mso-line-height-rule:exactly;'>
                                             Please do not reply to this email. Replies go to an unmonitored mailbox.<br /><br />
-                                            This email has been sent to <a class='deskFontSmall' href='mailto:*|EMAIL_CONTACT|*' style='font-family: open_sansregular, Helvetica, Arial, sans-serif;font-weight: normal;font-size: 14px;color: #0079c8;text-decoration: underline;'>*|EMAIL_CONTACT|*</a> by Bupa HI Pty Ltd <span class='appleLinks' style='white-space:nowrap;'>ABN 81 000 057 590</span> -&nbsp;33 Exhibition Street, Melbourne, VIC 3000, Australia (Bupa). Bupa values your privacy. You can change how we&nbsp;send you membership communications by logging in to <a class='deskFontSmall' href='https://my.bupa.com.au/login' style='font-weight: normal;color: #0079c8;text-decoration: underline;'>myBupa.</a> If you have any questions or feedback, go&nbsp;to <a class='deskFontSmall' href='https://www.bupa.com.au' style='font-family: open_sansregular, Helvetica, Arial, sans-serif;font-weight: normal;font-size: 14px;color: #0079c8;text-decoration: underline;'>bupa.com.au</a> or call <a class='appleLinks' href='tel:*|CTA_PHONE|*' style='font-family: open_sansregular, Helvetica, Arial, sans-serif;font-size: 14px;font-weight: bold;color: #333333;text-decoration: none;white-space:nowrap;'>*|CTA_PHONE|*.</a>
+                                            This email has been sent to <a class='deskFontSmall' href='mailto:*|EMAIL_CONTACT|*' style='font-family: open_sansregular, Helvetica, Arial, sans-serif;font-weight: normal;font-size: 14px;color: #0079c8;text-decoration: underline;'>*|EMAIL_CONTACT|*</a> by Bupa HI Pty Ltd <span class='appleLinks' style='white-space:nowrap;'>ABN 81 000 057 590</span> -&nbsp;33 Exhibition Street, Melbourne, VIC 3000, Australia (Bupa). Bupa values your privacy. You can change how we&nbsp;send you membership communications by logging in to <a class='deskFontSmall' href='https://my.bupa.com.au/login' style='font-weight: normal;color: #0079c8;text-decoration: underline;'>myBupa.</a> If you have any questions or feedback, go&nbsp;to <a class='deskFontSmall' href='https://www.bupa.com.au' style='font-family: open_sansregular, Helvetica, Arial, sans-serif;font-weight: normal;font-size: 14px;color: #0079c8;text-decoration: underline;'>bupa.com.au</a> or call <a class='appleLinks' href='tel:*|CTA_PHONE|*' style='font-family: open_sansregular, Helvetica, Arial, sans-serif;font-size: 14px;font-weight: bold;color: #333333;text-decoration: none;white-space:nowrap;'><span class='deskFontSmall'>*|CTA_PHONE|*.</span></a>
                                         </td>
                                     </tr>
                                     <tr>
