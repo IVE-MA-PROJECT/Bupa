@@ -473,13 +473,13 @@
                   *|COMMON_HEADING_OVC:BEGIN|*
                   <tr>
                     <td>
-                    <table border='0' cellpadding='0' cellspacing='0'>
-                        <tr>
-                    <td width='580' class='heroFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:300px;max-width:580px;width:100%;font-family:Arial, sans-serif;font-weight:bold;font-size:20px;line-height:24px;color:#ffffff;mso-line-height-rule:exactly;text-align: left;'>
-                      Changes to your Health Insurance cover from 1&nbsp;April&nbsp;2021
-                    </td>
-                        </tr>
-                    </table>
+                      <table width='580' border='0' cellpadding='0' cellspacing='0' style='min-width:300px;max-width:580px;width:100%;'>
+                          <tr>
+                            <td class='heroFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:Arial, sans-serif;font-weight:bold;font-size:20px;line-height:24px;color:#ffffff;mso-line-height-rule:exactly;text-align: left;'>
+                              Changes to your Health Insurance cover from 1&nbsp;April&nbsp;2021
+                            </td>
+                          </tr>
+                      </table>
                     </td>
                   </tr>
                   *|COMMON_HEADING_OVC:END|*
@@ -489,19 +489,19 @@
                   *|COMMON_HEADING_DOM:BEGIN|*
                   <tr>
                     <td>
-                     <table border='0' cellpadding='0' cellspacing='0'>
-                        <tr>
-                    <td width='580' class='heroFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:300px;max-width:580px;width:100%;font-family:Arial, sans-serif;font-weight:bold;font-size:20px;line-height:24px;color:#ffffff;mso-line-height-rule:exactly;text-align: left;'>
-                      Why your Health Insurance premium is&nbsp;changing from 1&nbsp;April&nbsp;2021
-                    </td>
-                        </tr>
-                     </table>
+                       <table width='580' border='0' cellpadding='0' cellspacing='0' style='min-width:300px;max-width:580px;width:100%;'>
+                          <tr>
+                            <td class='heroFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:Arial, sans-serif;font-weight:bold;font-size:20px;line-height:24px;color:#ffffff;mso-line-height-rule:exactly;text-align: left;'>
+                              Why your Health Insurance premium is&nbsp;changing from 1&nbsp;April&nbsp;2021
+                            </td>
+                          </tr>
+                       </table>
                      </td>
                   </tr>
                   *|COMMON_HEADING_DOM:END|*
                   <!--COMMON_HEADING_DOM-->
                   <tr>
-                    <td width='580' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:300px;max-width:580px;width:100%;line-height: 15px;'>&nbsp;</td>
+                    <td style='mso-table-lspace:0pt;mso-table-rspace:0pt;line-height: 15px;'>&nbsp;</td>
                   </tr>
                 </table>
                 <!--COMMON_HEADING-->
@@ -809,6 +809,9 @@
                                                       The premium you pay for your policy will change on&nbsp;<span style='font-weight: bold;white-space: nowrap;'>1 April 2021.</span>
                                                   </td>
                                               </tr>
+                                              <tr>
+                                                  <td style='height:10px;font-size:10px;line-height:10px;'>&nbsp;</td>
+                                              </tr>
                                           </table>
                                           *|COMMON_PREMIUM_NEW:END|*
                                           <!--COMMON_PREMIUM_NEW-->
@@ -939,9 +942,7 @@
                                       <tr>
                                           <td>
                                               <table border='0' cellpadding='0' cellspacing='0' style='min-width:270px;max-width:550px;width:100%;'>
-                                                  <tr>
-                                                      <td colspan='2' style='height:15px;font-size:15px;line-height:15px;'>&nbsp;</td>
-                                                  </tr>
+                                                  
                                                   <tr>
                                                       <td colspan='2' style='height:2px;font-size:2px;line-height:2px;background-color: #ffffff;'>&nbsp;</td>
                                                   </tr>
@@ -2156,7 +2157,7 @@
                                 </tr>
                                 <tr>
                                     <td width='580' class='deskFont' style='mso-table-lspace:0pt;mso-table-rspace:0pt;min-width:270px;max-width:580px;font-family: Arial, sans-serif; font-weight:normal; font-size:18px; line-height:22px;color:#333333;mso-line-height-rule:exactly;'>
-                                        We know that some customers are still feeling the financial effects of COVID-19. If you think this increase will cause you genuine financial hardship, <a href='#' style='font-weight: normal;color: #0079c8;text-decoration: underline;'>click here</a> to see how we can help. It's also important to regularly review your cover to ensure it still meets your needs, and we can help you with that&nbsp;too.
+                                        We know that some customers are still feeling the financial effects of COVID-19. If you think this increase will cause you genuine financial hardship, contact us to see how we can help. It’s also important to regularly review your cover to ensure it still meets your needs, and we can help you with that&nbsp;too.
                                     </td>
                                 </tr>
                                 <tr>
@@ -3505,15 +3506,41 @@
                                       *|COMMON_LHC-REMAINING-DAYS_AD1:BEGIN|*
                                       <b>Lifetime Health Cover Remaining Days for *|ADULT1_FIRSTNAME|*</b><br />
                                       Your Lifetime Health Cover Loading is <b>*|ADULT1_LHC_PERCENTAGE|*.</b><br /><br />
-                                      You have *|ADULT1_LHC_REMAINING_DAYS|* days remaining until you have reached 10&nbsp;continuous years of&nbsp;cover and your loading is removed. This is calculated based on the number of days you have paid continuous hospital cover.<br /><br />
-                                      If you maintain continuous hospital cover, your Lifetime Health Cover loading will be removed on <strong><b><span style='font-weight:bold;'>*|ADULT1_LHC_END_DATE|*</span></b></strong>.<br /><br />
+                                      You have <b>*|ADULT1_LHC_REMAINING_DAYS|*</b> days remaining until you have reached 10&nbsp;continuous years of&nbsp;cover and your loading is removed.<br /><br />
+
+                                      *|CALC_DAYS_REMAINING_RE:BEGIN|*
+                                      This is calculated based on the number of days you have paid continuous hospital cover as at *|RUN_DATE|*.<br /><br />
+                                      *|CALC_DAYS_REMAINING_RE:END|*
+                                      
+                                      *|CALC_DAYS_REMAINING_P:BEGIN|*
+                                      This calculation has been projected to *|RUN_DATE|* and is based on you maintaining continuous hospital cover till this date. If you do not maintain your hospital cover or change your cover in the meantime, this may result in a re-calculation of your days remaining.<br /><br />
+                                      *|CALC_DAYS_REMAINING_P:END|*
+                                      
+                                      *|CALC_DAYS_REMAINING_S:BEGIN|*
+                                      This is calculated based on the number of days you have paid continuous hospital cover as at the start date of your cover.<br /><br />
+                                      *|CALC_DAYS_REMAINING_S:END|*
+
+                                      If you maintain continuous hospital cover, your Lifetime Health Cover loading will be removed on <strong><b><span style='font-weight:bold;'>*|ADULT1_LHC_END_DATE| </span></b></strong>(inclusive).<br /><br />
                                       *|COMMON_LHC-REMAINING-DAYS_AD1:END|*
                                       <!--COMMON_LHC-REMAINING-DAYS_AD1-->
                                       <!--COMMON_LHC-REMAINING-DAYS_AD2-->
                                       *|COMMON_LHC-REMAINING-DAYS_AD2:BEGIN|*
                                       <b>Lifetime Health Cover Remaining Days for *|ADULT2_FIRSTNAME|*</b><br />
                                       Your Lifetime Health Cover Loading is <b>*|ADULT2_LHC_PERCENTAGE|*.</b><br /><br />
-                                      You have *|ADULT2_LHC_REMAINING_DAYS|* days remaining until you have reached 10&nbsp;continuous years of&nbsp;cover and your loading is removed. This is calculated based on the number of days you have paid continuous hospital cover.<br /><br />
+                                      You have <b>*|ADULT2_LHC_REMAINING_DAYS|*</b> days remaining until you have reached 10&nbsp;continuous years of&nbsp;cover and your loading is removed.<br /><br />
+
+                                      *|CALC_DAYS_REMAINING_RE:BEGIN|*
+                                      This is calculated based on the number of days you have paid continuous hospital cover as at *|RUN_DATE|*.<br /><br />
+                                      *|CALC_DAYS_REMAINING_RE:END|*
+                                      
+                                      *|CALC_DAYS_REMAINING_P:BEGIN|*
+                                      This calculation has been projected to *|RUN_DATE|* and is based on you maintaining continuous hospital cover till this date. If you do not maintain your hospital cover or change your cover in the meantime, this may result in a re-calculation of your days remaining.<br /><br />
+                                      *|CALC_DAYS_REMAINING_P:END|*
+                                      
+                                      *|CALC_DAYS_REMAINING_S:BEGIN|*
+                                      This is calculated based on the number of days you have paid continuous hospital cover as at the start date of your cover.<br /><br />
+                                      *|CALC_DAYS_REMAINING_S:END|*
+
                                       If you maintain continuous hospital cover, your Lifetime&nbsp;Health Cover loading will be removed on&nbsp;<strong><b><span style='font-weight:bold;'>*|ADULT2_LHC_END_DATE|*</span></b></strong>.<br /><br />
                                       *|COMMON_LHC-REMAINING-DAYS_AD2:END|*
                                       <!--COMMON_LHC-REMAINING-DAYS_AD2-->
@@ -4293,9 +4320,9 @@
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td>
-                                        <a class='deskFontSmall' href='https://www.bupa.com.au/contact-us/bupa-store-opening-hours' target='_blank' style='color:#333333;font-family:"Noto Sans SC", Arial, sans-serif;font-weight:normal;font-size:18px; line-height:22px;text-decoration: none;'>
-                                          扫码关注公众号
+                                      <td valign='top' style='height:auto;'>
+                                        <a href='https://www.bupa.com.au/contact-us/bupa-store-opening-hours' target='_blank' style='border:none;text-decoration: none;'>
+                                          <img width='93' height='26' src='https://edmimages.bluestardm.com.au/RR2021/weChatLink1.jpg' style='display:block;min-width:93px;min-height:26px;' />
                                         </a>
                                       </td>
                                     </tr>
@@ -4303,9 +4330,9 @@
                                       <td style='font-size: 30px;line-height: 30px;height: 30px;'>&nbsp;</td>
                                     </tr>
                                     <tr>
-                                      <td>
-                                        <a class='deskFontSmall' href='https://www.bupa.com.au/contact-us/bupa-store-opening-hours' target='_blank' style='color:#333333;font-family:"Noto Sans SC", Arial, sans-serif;font-weight:normal;font-size:18px; line-height:22px;text-decoration: none;'>
-                                        Bupa 澳洲健康
+                                      <td valign='middle' style='height:auto;'>
+                                        <a class='deskFontSmall' href='https://www.bupa.com.au/contact-us/bupa-store-opening-hours' target='_blank' style='color:#333333;font-family: sans-serif;font-weight:normal;font-size:18px; line-height:22px;text-decoration: none;'>
+                                        Bupa <img width='57' height='22' src='https://edmimages.bluestardm.com.au/RR2021/weChatLink2.jpg' style='display:inline-block;min-width:57px;min-height:22px;vertical-align: middle;' />
                                         </a>
                                       </td>
                                     </tr>
