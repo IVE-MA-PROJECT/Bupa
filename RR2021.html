@@ -2963,7 +2963,7 @@
                                               <td style='min-width:2px;max-width:5px;'>&nbsp;</td>
                                               <td width='100' class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:12px;line-height:16px;min-width:40px;max-width:110px;'>Lifetime Health<br />Cover Loading</td>
                                               <td style='min-width:2px;max-width:5px;'>&nbsp;</td>
-                                              <td width='100' class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:12px;line-height:16px;min-width:40px;max-width:110px;'>Accumulative <br />days absent as at<br /><span class='deskFontSmaller' style='font-size:10px;font-weight:bold;'>*|EFFECTIVE_DATE|*</span></td>
+                                              <td width='100' class='deskFontSmall' style='color:#ffffff;font-family:Arial, sans-serif;font-weight:normal;font-size:12px;line-height:16px;min-width:40px;max-width:110px;'>Accumulative <br />days absent as at<br /><span class='deskFontSmaller' style='font-size:10px;font-weight:bold;'>*|LHC_PROJECTED_AT_DATE|*</span></td>
                                               <td style='min-width:1px;max-width:5px;'>&nbsp;</td>
                                           </tr>
                                           <tr>
@@ -3500,11 +3500,11 @@
                                       You have <b>*|ADULT1_LHC_REMAINING_DAYS|*</b> days remaining until you have reached 10&nbsp;continuous years of&nbsp;cover and your loading is removed.<br /><br />
 
                                       *|CALC_DAYS_REMAINING_RE_AD1:BEGIN|*
-                                      This is calculated based on the number of days you have paid continuous hospital cover as at *|RUN_DATE|*.<br /><br />
+                                      This is calculated based on the number of days you have paid continuous hospital cover as at *|LHC_PROJECTED_AT_DATE|*.<br /><br />
                                       *|CALC_DAYS_REMAINING_RE_AD1:END|*
 
                                       *|CALC_DAYS_REMAINING_P_AD1:BEGIN|*
-                                      This calculation has been projected to *|RUN_DATE|* and is based on you maintaining continuous hospital cover till this date. If you do not maintain your hospital cover or change your cover in the meantime, this may result in a re-calculation of your days remaining.<br /><br />
+                                      This calculation has been projected to *|LHC_PROJECTED_AT_DATE|* and is based on you maintaining continuous hospital cover till this date. If you do not maintain your hospital cover or change your cover in the meantime, this may result in a re-calculation of your days remaining.<br /><br />
                                       *|CALC_DAYS_REMAINING_P_AD1:END|*
 
                                       *|CALC_DAYS_REMAINING_S_AD1:BEGIN|*
@@ -3521,11 +3521,11 @@
                                       You have <b>*|ADULT2_LHC_REMAINING_DAYS|*</b> days remaining until you have reached 10&nbsp;continuous years of&nbsp;cover and your loading is removed.<br /><br />
 
                                       *|CALC_DAYS_REMAINING_RE_AD2:BEGIN|*
-                                      This is calculated based on the number of days you have paid continuous hospital cover as at *|RUN_DATE|*.<br /><br />
+                                      This is calculated based on the number of days you have paid continuous hospital cover as at *|LHC_PROJECTED_AT_DATE|*.<br /><br />
                                       *|CALC_DAYS_REMAINING_RE_AD2:END|*
 
                                       *|CALC_DAYS_REMAINING_P_AD2:BEGIN|*
-                                      This calculation has been projected to *|RUN_DATE|* and is based on you maintaining continuous hospital cover till this date. If you do not maintain your hospital cover or change your cover in the meantime, this may result in a re-calculation of your days remaining.<br /><br />
+                                      This calculation has been projected to *|LHC_PROJECTED_AT_DATE|* and is based on you maintaining continuous hospital cover till this date. If you do not maintain your hospital cover or change your cover in the meantime, this may result in a re-calculation of your days remaining.<br /><br />
                                       *|CALC_DAYS_REMAINING_P_AD2:END|*
 
                                       *|CALC_DAYS_REMAINING_S_AD2:BEGIN|*
